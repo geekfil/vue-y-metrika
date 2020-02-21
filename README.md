@@ -76,8 +76,20 @@ Vue.use(VueYandexMetrika, {
 ___
 
 ```javascript
-// your code
+// example call method
 this.$metrika.hit(path)
+```
+
+
+```javascript
+// example call method after load script
+{
+    mounted(){
+        this.$metrikaEvents.$on('ym:ready',function(metrika) {
+         metrika.hit(path)
+        });
+    }
+}
 ```
 
 #### Options:
