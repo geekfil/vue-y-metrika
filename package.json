@@ -1,10 +1,10 @@
 {
   "name": "vue-y-metrika",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "description": "Yandex Metrika plugin for Vue",
   "repository": {
     "type": "git",
-    "url": "https://github.com/geekfil/vue-yandex-metrika"
+    "url": "https://github.com/geekfil/vue-y-metrika"
   },
   "scripts": {
     "commit": "git-cz",
@@ -30,14 +30,14 @@
     "Yandex Metrika",
     "yandex metrika",
     "yandex tracking",
-    "vue-yandex-metrika",
+    "vue-y-metrika",
     "vue-yandex-metrica",
     "Яндекс",
     "яндекс",
     "Яндекс Метрика",
     "яндекс метрика"
   ],
-  "main": "dist/vue-yandex-metrika.js",
+  "main": "dist/vue-y-metrika.js",
   "files": [
     "dist"
   ],
@@ -47,9 +47,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vchaptsev/vue-yandex-metrika/issues"
+    "url": "https://github.com/vchaptsev/vue-y-metrika/issues"
   },
-  "homepage": "https://github.com/vchaptsev/vue-yandex-metrika#readme",
+  "homepage": "https://github.com/vchaptsev/vue-y-metrika#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
