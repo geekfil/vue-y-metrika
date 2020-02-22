@@ -2,38 +2,38 @@
     <img src="https://i.imgur.com/iu7VdZ7.png" />
     <br>
     <br>
-    <a href="https://badge.fury.io/js/vue-yandex-metrika">
-        <img src="https://badge.fury.io/js/vue-yandex-metrika.svg" />
+    <a href="https://badge.fury.io/js/vue-y-metrika">
+        <img src="https://badge.fury.io/js/vue-y-metrika.svg" />
     </a>
-    <a href="https://www.npmjs.com/package/vue-yandex-metrika">
-        <img src="https://img.shields.io/npm/dm/vue-yandex-metrika.svg" />
+    <a href="https://www.npmjs.com/package/vue-y-metrika">
+        <img src="https://img.shields.io/npm/dm/vue-y-metrika.svg" />
     </a>
     <br>
-    <a href="https://travis-ci.org/vchaptsev/vue-yandex-metrika">
-        <img src="https://travis-ci.org/vchaptsev/vue-yandex-metrika.svg?branch=master" />
+    <a href="https://travis-ci.org/vchaptsev/vue-y-metrika">
+        <img src="https://travis-ci.org/vchaptsev/vue-y-metrika.svg?branch=master" />
     </a>
-    <a href='https://coveralls.io/github/vchaptsev/vue-yandex-metrika?branch=master'>
-        <img src='https://coveralls.io/repos/github/vchaptsev/vue-yandex-metrika/badge.svg?branch=master' />
+    <a href='https://coveralls.io/github/vchaptsev/vue-y-metrika?branch=master'>
+        <img src='https://coveralls.io/repos/github/vchaptsev/vue-y-metrika/badge.svg?branch=master' />
     </a>
 </p>
 
 
 # Vue Yandex Metrika
 
-**vue-yandex-metrika** allows you to send data about visited pages to [Yandex Metrika].
+**vue-y-metrika** allows you to send data about visited pages to [Yandex Metrika].
 
 ## Installation
 
 Install with [yarn]:
 
 ```bash
-$ yarn add vue-yandex-metrika
+$ yarn add vue-y-metrika
 ```
 
 Install with [npm]:
 
 ```bash
-$ npm install vue-yandex-metrika --save
+$ npm install vue-y-metrika --save
 ```
 
 
@@ -46,7 +46,7 @@ Pass the` VueRouter` instance to the plugin and let it handle everything for you
 // your main.js
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import VueYandexMetrika from 'vue-yandex-metrika'                               
+import VueYandexMetrika from 'vue-y-metrika'                               
 
 const router = new VueRouter({...}) // your routes
 
@@ -65,7 +65,7 @@ Works without router: [Metrika API]
 ```javascript
 // your main.js
 import Vue from 'vue'
-import VueYandexMetrika from 'vue-yandex-metrika'                               
+import VueYandexMetrika from 'vue-y-metrika'                               
 
 Vue.use(VueYandexMetrika, {
     id: XXXXXXXX,

@@ -13,8 +13,8 @@ export function checkConfig () {
 
     // Checks if config is valid
     if (typeof document === 'undefined') {return}
-    if (!config.id) {throw new Error('[vue-yandex-metrika] Please enter a Yandex Metrika tracking ID')}
-    if (!config.router && config.env !== 'production') {return console.warn('[vue-yandex-metrika] Router is not passed, autotracking is disabled')}
+    if (!config.id) {throw new Error('[vue-y-metrika] Please enter a Yandex Metrika tracking ID')}
+    if (!config.router && config.env !== 'production') {return console.warn('[vue-y-metrika] Router is not passed, autotracking is disabled')}
 }
 
 export function loadScript (callback, scriptSrc=config.scriptSrc) {
@@ -47,21 +47,21 @@ export function createMetrika (Vue) {
     } else {
 
         // Mock metrika
-        console.warn('[vue-yandex-metrika] Tracking is disabled, because env option is not "production"')
-        if (config.debug) {console.warn('[vue-yandex-metrika] DEBUG is true: you\'ll see all API calls in the console')}
+        console.warn('[vue-y-metrika] Tracking is disabled, because env option is not "production"')
+        if (config.debug) {console.warn('[vue-y-metrika] DEBUG is true: you\'ll see all API calls in the console')}
 
         return Vue.prototype.$metrika = Vue.$metrika = {
-            addFileExtension() {if (config.debug) {console.log('[vue-yandex-metrika] addFileExtension:', arguments)}},
-            extLink() {if (config.debug) {console.log('[vue-yandex-metrika] extLink:', arguments)}},
-            file() {if (config.debug) {console.log('[vue-yandex-metrika] file:', arguments)}},
-            getClientID() {if (config.debug) {console.log('[vue-yandex-metrika] getClientID:', arguments)}},
-            hit() {if (config.debug) {console.log('[vue-yandex-metrika] hit:', arguments)}},
-            notBounce() {if (config.debug) {console.log('[vue-yandex-metrika] notBounce:', arguments)}},
-            params() {if (config.debug) {console.log('[vue-yandex-metrika] params:', arguments)}},
-            reachGoal() {if (config.debug) {console.log('[vue-yandex-metrika] reachGoal:', arguments)}},
-            replacePhones() {if (config.debug) {console.log('[vue-yandex-metrika] replacePhones:', arguments)}},
-            setUserID() {if (config.debug) {console.log('[vue-yandex-metrika] setUserID:', arguments)}},
-            userParams() {if (config.debug) {console.log('[vue-yandex-metrika] userParams:', arguments)}}
+            addFileExtension() {if (config.debug) {console.log('[vue-y-metrika] addFileExtension:', arguments)}},
+            extLink() {if (config.debug) {console.log('[vue-y-metrika] extLink:', arguments)}},
+            file() {if (config.debug) {console.log('[vue-y-metrika] file:', arguments)}},
+            getClientID() {if (config.debug) {console.log('[vue-y-metrika] getClientID:', arguments)}},
+            hit() {if (config.debug) {console.log('[vue-y-metrika] hit:', arguments)}},
+            notBounce() {if (config.debug) {console.log('[vue-y-metrika] notBounce:', arguments)}},
+            params() {if (config.debug) {console.log('[vue-y-metrika] params:', arguments)}},
+            reachGoal() {if (config.debug) {console.log('[vue-y-metrika] reachGoal:', arguments)}},
+            replacePhones() {if (config.debug) {console.log('[vue-y-metrika] replacePhones:', arguments)}},
+            setUserID() {if (config.debug) {console.log('[vue-y-metrika] setUserID:', arguments)}},
+            userParams() {if (config.debug) {console.log('[vue-y-metrika] userParams:', arguments)}}
         }
     }
 }
